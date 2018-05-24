@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/status"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/good"
+            android:gravity="center"
+            android:text="졸음 위험도"
+            android:textColor="@color/black" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/cameraView">
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/cotext"
+            android:text="CO2 농도 : 1000 PPM"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/temptext"
+            android:layout_marginBottom="5dp"
+            android:text="온도 : 20 ℃"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hutext"
+            android:layout_marginBottom="5dp"
+            android:text="습도 : 60 % "
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hearttext"
+            android:layout_marginBottom="20dp"
+            android:text="맥박 : 70 BPM"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonNavi"
+            android:layout_gravity="center"
+            android:text="근처 휴게소 검색" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
